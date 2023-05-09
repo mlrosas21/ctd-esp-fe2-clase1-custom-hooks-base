@@ -31,7 +31,7 @@ const App: FC = () => {
   return (
       <Provider store={store}>
         <TrackingProvider>
-            <LanguageComponent language={language} setLanguage={setLanguage} t={translate}/>
+            <LanguageComponent t={translate}/>
             <Navbar t={translate}/>
             <Routes>
               <Route path="/" element={<Page3 />} />
