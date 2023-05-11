@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import PaginationInfo from 'features/pagination/pagination.types';
+import { useLanguage } from 'hooks/useLanguage';
 
 type PaginationProps = {
   p: PaginationInfo;
@@ -7,26 +8,23 @@ type PaginationProps = {
   onN: () => void;
 };
 
-const Pagination: FC<PaginationProps> = ({
-  p,
-     onP,
-  onN
-}: PaginationProps) => {
-    const onPrev = () => {
-      onP();
-    };
+const Pagination: FC<PaginationProps> = ({ p, onP, onN }: PaginationProps) => {
+  const { translate } = useLanguage();
+  const onPrev = () => {
+    onP();
+  };
 
-    const onNext = () => {
-      onN();
-    };
+  const onNext = () => {
+    onN();
+  };
 
   return (
     <div className={'pagination'}>
-        <button disabled={!p.prev} onClick={() => onPrev()} className={'button primary'}>
-          Previous
-        </button>
+      <button disabled={!p.prev} onClick={() => onPrev()} className={'button primary'}>
+        {translate('pagination.back')}
+      </button>
       <button disabled={!p.next} onClick={() => onNext()} className={'button primary'}>
-        Next
+        {translate('pagination.next')}
       </button>
     </div>
   );

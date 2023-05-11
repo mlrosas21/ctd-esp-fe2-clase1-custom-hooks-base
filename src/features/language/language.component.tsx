@@ -2,16 +2,15 @@ import { FC } from 'react';
 import { useLanguage } from 'hooks/useLanguage';
 
 const LanguageComponent: FC = () => {
-  
   const { language, changeLanguage, translate } = useLanguage();
 
   return (
     <div className={'language'}>
-      <div
+      <button
         onClick={() => changeLanguage('SPANISH')}
         className={language === 'SPANISH' ? 'language-button active' : 'language-button'}>
         {translate('language.spanish')}
-      </div>
+      </button>
       <button
         onClick={() => changeLanguage('ENGLISH')}
         className={language === 'ENGLISH' ? 'language-button active' : 'language-button'}>
