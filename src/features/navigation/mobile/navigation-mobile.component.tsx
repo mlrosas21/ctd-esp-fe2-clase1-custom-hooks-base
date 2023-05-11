@@ -2,14 +2,13 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { SearchBar } from 'features/search';
 import {FC, useState} from 'react';
 import { NavLink } from 'react-router-dom';
+import { useLanguage } from 'hooks/useLanguage';
 
-type NavMobileProps = {
-  t: (key: string) => string
-}
-
-const NavMobile: FC<NavMobileProps> = ({t}: NavMobileProps) => {
+const NavMobile: FC = () => {
   const [isOpen, setOpen] = useState<boolean>(false);
   const toggle = () => setOpen((value) => !value);
+
+  const { translate } = useLanguage()
 
   return (
     <div className={`container mobile-nav`}>
@@ -25,10 +24,10 @@ const NavMobile: FC<NavMobileProps> = ({t}: NavMobileProps) => {
         <div className={'container'} style={{ flexDirection: 'column' }}>
           <div className={'container'} style={{ width: 400, flexDirection: 'column' }}>
             <NavLink to="/" className={'nav-link'}>
-              <h3>{t('navigation.home')}</h3>
+              <h3>{translate('navigation.home')}</h3>
             </NavLink>
             <NavLink to="/following" className={'nav-link'}>
-              <h3>{t('navigation.following')}</h3>
+              <h3>{translate('navigation.following')}</h3>
             </NavLink>
           </div>
           <SearchBar />

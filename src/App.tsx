@@ -9,30 +9,16 @@ import Page1 from 'pages/Page1';
 import { LanguageComponent } from 'features/language';
 import { TrackingProvider } from 'features/tracking/tracking.context';
 import Languages from "features/language/language.types";
-import esTranslations from "data/i18n.es";
-import enTranslations from "data/i18n.en";
-import ptTranslations from "data/i18n.pt";
 
 const App: FC = () => {
 
-  const [language, setLanguage] = useState<Languages>('ENGLISH' as Languages);
-
-    const translate = (key: string) => {
-        if (language === 'SPANISH') {
-                return esTranslations[key];
-        } else if (language === 'ENGLISH') {
-            return enTranslations[key];
-        } else if (language === 'PORTUGUESE') {
-                return ptTranslations[key];
-        }
-        return key;
-    }
+  const [language, setLanguage] = useState<Languages>('ENGLISH' as Languages);    
 
   return (
       <Provider store={store}>
         <TrackingProvider>
-            <LanguageComponent t={translate}/>
-            <Navbar t={translate}/>
+            <LanguageComponent />
+            <Navbar />
             <Routes>
               <Route path="/" element={<Page3 />} />
               <Route path="/location/:id" element={<Page2 />} />
