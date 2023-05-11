@@ -4,7 +4,9 @@ const enTranslations: Record<string, string> = {
   'language.portuguese': 'Portuguese',
   'language.english': 'English',
   'navigation.home': 'Home',
-  'navigation.following': 'Following'
+  'navigation.following': 'Following',
+  'pagination.next': 'Next',
+  'pagination.back': 'Back'
 };
 
 export default enTranslations;
