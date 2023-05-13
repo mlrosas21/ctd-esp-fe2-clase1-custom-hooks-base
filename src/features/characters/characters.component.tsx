@@ -8,6 +8,7 @@ export type CharactersComponentProps = {
 
 const CharactersComponent: FC<CharactersComponentProps> = ({
   rickIDDS
+
 }: CharactersComponentProps) => {
   const { data: characters, error, isLoading } = useGetCharactersQuery({ ids: rickIDDS });
 
