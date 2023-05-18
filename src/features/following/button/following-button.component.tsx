@@ -13,9 +13,9 @@ const FollowingButtonComponent: FC<FollowingButtonProps> = ({
   const alt = isFav ? 'is_favorite' : 'is_not_favorite';
 
   return (
-    <div className={'following-button'} onClick={() => onToggleFavorite(!isFav)}>
-      <img src={src} />
-    </div>
+    <button className={'following-button'} onClick={() => onToggleFavorite(!isFav)} aria-label='Mark as favorite'>
+      <img src={src} alt='Favorite Icon' />
+    </button>
   );
 };
 

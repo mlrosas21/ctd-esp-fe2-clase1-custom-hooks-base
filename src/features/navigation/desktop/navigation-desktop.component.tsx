@@ -10,7 +10,7 @@ const NavDesktop: FC = () => {
     <div className={'container nav'} style={{ justifyContent: 'space-between' }}>
       <div className={'container'} style={{ width: 400 }}>
         <NavLink to="/" className={'nav-link'}>
-          <img className={'logo'} src={'/images/logo-dh.png'} />
+          <img className={'logo'} alt="Home" src={'/images/logo-dh.png'} />
         </NavLink>
         <NavLink to="/" className={'nav-link'}>
           <h3>{translate('navigation.home')}</h3>
