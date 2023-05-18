@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { CharactersComponent } from 'features/characters';
 import { Location } from 'features/locations';
+import { withLoading } from 'features/loading';
 
 export type LocationDetailComponentProps = {
   location?: Location;
@@ -25,4 +26,4 @@ const LocationDetailComponent: FC<LocationDetailComponentProps> = ({
   );
 };
 
-export default LocationDetailComponent;
+export default withLoading(LocationDetailComponent);
