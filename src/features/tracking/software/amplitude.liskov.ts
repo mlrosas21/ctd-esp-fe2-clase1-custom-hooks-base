@@ -1,4 +1,4 @@
-import { AmplitudeTrackingSoftware } from 'features/tracking/software/index';
+import { AmplitudeTrackingSoftware } from './';
 
 class AmplitudeLiskovTrackingSoftware extends AmplitudeTrackingSoftware {
   /**

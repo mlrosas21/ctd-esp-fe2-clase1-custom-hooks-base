@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import { useGetLocationQuery } from 'features/locations/locations.endpoints';
-import { LocationDetailComponent } from 'features/locations/detail/index';
+import { useGetLocationQuery } from '../locations.endpoints';
+import { LocationDetailComponent } from './index';
 
 export type LocationDetailContainerProps = {
   id: number;

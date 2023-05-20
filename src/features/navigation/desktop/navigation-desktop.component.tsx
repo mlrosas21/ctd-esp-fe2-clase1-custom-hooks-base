@@ -1,5 +1,5 @@
-import { SearchBar } from 'features/search';
-import { useLanguage } from 'hooks/useLanguage';
+import { SearchBar } from '../../search';
+import { useLanguage } from '../../../hooks/useLanguage';
 import { FC } from 'react';
 import { NavLink } from 'react-router-dom';
 

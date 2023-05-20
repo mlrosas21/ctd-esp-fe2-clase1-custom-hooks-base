@@ -1,4 +1,4 @@
-import FolComp from 'features/following/folComp';
+import FolComp from './folComp';
 
 import followingReducer from './following.slices';
 

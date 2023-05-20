@@ -3,9 +3,9 @@ import {
   AmplitudeTrackingSoftware,
   FacebookTrackingSoftware,
   GoogleTrackingSoftware
-} from 'features/tracking/software';
-import { TrackingSoftware } from 'features/tracking/tracking.types';
-import AmplitudeLiskovTrackingSoftware from 'features/tracking/software/amplitude.liskov';
+} from './software';
+import { TrackingSoftware } from './tracking.types';
+import AmplitudeLiskovTrackingSoftware from '../tracking/software/amplitude.liskov';
 
 export interface TrackingState {
   trackingSoftwares: TrackingSoftware[];

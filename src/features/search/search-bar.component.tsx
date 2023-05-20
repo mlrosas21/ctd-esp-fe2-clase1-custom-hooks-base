@@ -1,7 +1,7 @@
 import { FaSearch } from 'react-icons/fa';
 import { ChangeEvent, FC } from 'react';
-import { useAppDispatch, useAppSelector } from 'store/hooks';
-import { searchLocations } from 'features/locations/locations.slices';
+import { useAppDispatch, useAppSelector } from '../../store/hooks';
+import { searchLocations } from '../locations/locations.slices';
 import { useNavigate } from 'react-router-dom';
 
 const SearchBar: FC = () => {

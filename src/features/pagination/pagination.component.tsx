@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import PaginationInfo from 'features/pagination/pagination.types';
-import { useLanguage } from 'hooks/useLanguage';
+import PaginationInfo from './pagination.types';
+import { useLanguage } from '../../hooks/useLanguage';
 
 type PaginationProps = {
   p: PaginationInfo;

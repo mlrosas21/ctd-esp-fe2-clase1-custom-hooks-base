@@ -1,4 +1,4 @@
-import 'features/pagination/pagination.css';
+import './pagination.css';
 import Pagination from './pagination.component';
 import PaginationInfo from './pagination.types';
 export { Pagination };

@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { useGetCharactersQuery } from 'features/characters/characters.endpoints';
+import { useGetCharactersQuery } from './characters.endpoints';
 import CharacterCard from './CharacterCard/components/CharacterCard';
 
 export type CharactersComponentProps = {

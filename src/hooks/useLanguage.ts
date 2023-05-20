@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
-import esTranslations from 'data/i18n.es';
-import enTranslations from 'data/i18n.en';
-import ptTranslations from 'data/i18n.pt';
-import { useAppDispatch, useAppSelector } from 'store/hooks';
+import esTranslations from '../data/i18n.es';
+import enTranslations from '../data/i18n.en';
+import ptTranslations from '../data/i18n.pt';
+import { useAppDispatch, useAppSelector } from '../store/hooks';
 import { setLanguage } from '../features/language/language.slices';
-import { Language } from 'features/language';
+import { Language } from '../features/language';
 
 export const useLanguage = () => {
 

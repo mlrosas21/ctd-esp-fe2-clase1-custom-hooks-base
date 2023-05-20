@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { LocationsComponent } from 'features/locations';
+import { LocationsComponent } from '../features/locations';
 
 /**
  * HomePage

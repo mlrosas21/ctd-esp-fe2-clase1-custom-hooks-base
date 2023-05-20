@@ -1,3 +1,3 @@
-import NavDesktop from 'features/navigation/desktop/navigation-desktop.component';
+import NavDesktop from './navigation-desktop.component';
 
 export { NavDesktop };

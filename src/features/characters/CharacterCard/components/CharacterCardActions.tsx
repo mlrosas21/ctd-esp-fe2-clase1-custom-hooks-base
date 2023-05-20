@@ -1,7 +1,7 @@
 import { useCharacterCardContext } from '../CharacterCardContext';
-import { useAppDispatch, useAppSelector } from 'store/hooks';
-import { addCharacterToFollowingList, removeCharacterToFollowingList } from 'features/following/following.slices';
-import { FollowingButtonComponent } from 'features/following/button';
+import { useAppDispatch, useAppSelector } from '../../../../store/hooks';
+import { addCharacterToFollowingList, removeCharacterToFollowingList } from '../../../following/following.slices';
+import { FollowingButtonComponent } from '../../../following/button';
 
 export const CharacterCardActions = () => {
   const {character} = useCharacterCardContext()

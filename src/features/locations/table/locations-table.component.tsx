@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import { Location } from 'features/locations';
+import { Location } from '../';
 import { useNavigate } from 'react-router-dom';
-import useTracking from 'features/tracking/tracking.context';
+import useTracking from '../../tracking/tracking.context';
 
 export type LocationsTableProps = {
   locations: Location[];

@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import CharactersComponent from 'features/characters/characters.component';
-import { useAppSelector } from 'store/hooks';
+import CharactersComponent from '../characters/characters.component';
+import { useAppSelector } from '../../store/hooks';
 
 const FolComp: FC = () => {
   const { followingIds } = useAppSelector((state) => state.following);

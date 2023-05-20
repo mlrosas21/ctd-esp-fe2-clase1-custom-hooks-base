@@ -1,8 +1,8 @@
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { SearchBar } from 'features/search';
+import { SearchBar } from '../../search';
 import {FC, useState} from 'react';
 import { NavLink } from 'react-router-dom';
-import { useLanguage } from 'hooks/useLanguage';
+import { useLanguage } from '../../../hooks/useLanguage';
 
 const NavMobile: FC = () => {
   const [isOpen, setOpen] = useState<boolean>(false);

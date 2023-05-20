@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { LocationDetailContainer } from 'features/locations/detail';
+import { LocationDetailContainer } from '../features/locations/detail';
 
 /**
  * Location page

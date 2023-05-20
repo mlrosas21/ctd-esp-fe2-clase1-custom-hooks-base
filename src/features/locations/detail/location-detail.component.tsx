@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import { CharactersComponent } from 'features/characters';
-import { Location } from 'features/locations';
-import { withLoading } from 'features/loading';
+import { CharactersComponent } from '../../characters';
+import { Location } from '../../locations';
+import { withLoading } from '../../loading';
 
 export type LocationDetailComponentProps = {
   location?: Location;

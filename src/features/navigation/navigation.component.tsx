@@ -1,5 +1,5 @@
-import { NavDesktop } from 'features/navigation/desktop';
-import { NavMobile } from 'features/navigation/mobile';
+import { NavDesktop } from './desktop';
+import { NavMobile } from './mobile';
 import { FC } from 'react';
 
 const Navbar: FC = () => (

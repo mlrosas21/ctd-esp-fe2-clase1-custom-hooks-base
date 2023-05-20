@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { FolComp } from 'features/following';
+import { FolComp } from '../features/following';
 
 /**
  * Following page

@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { useLanguage } from 'hooks/useLanguage';
+import { useLanguage } from '../../hooks/useLanguage';
 
 const LanguageComponent: FC = () => {
   const { language, changeLanguage, translate } = useLanguage();
