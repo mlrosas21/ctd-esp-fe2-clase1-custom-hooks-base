@@ -6,7 +6,8 @@ const esTranslations: Record<string, string> = {
   'navigation.home': 'Inicio',
   'navigation.following': 'Siguiendo',
   'pagination.next': 'Siguiente',
-  'pagination.back': 'Anterior'
+  'pagination.back': 'Anterior',
+  search: 'Buscar...'
 };
 
 export default esTranslations;

@@ -6,7 +6,8 @@ const ptTranslations: Record<string, string> = {
   'navigation.home': 'Inicio',
   'navigation.following': 'Seguido',
   'pagination.next': 'Próxima',
-  'pagination.back': 'Anterior'
+  'pagination.back': 'Anterior',
+  search: 'Procurar...'
 };
 
 export default ptTranslations;

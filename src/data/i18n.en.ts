@@ -6,7 +6,8 @@ const enTranslations: Record<string, string> = {
   'navigation.home': 'Home',
   'navigation.following': 'Following',
   'pagination.next': 'Next',
-  'pagination.back': 'Back'
+  'pagination.back': 'Back',
+  search: 'Search...'
 };
 
 export default enTranslations;
